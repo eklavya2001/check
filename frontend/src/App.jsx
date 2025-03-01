@@ -9,7 +9,7 @@ function App() {
   // Fetch data from the backend (GET request)
   const fetchData = async () => {
     try {
-      const response = await fetch("https://check-backend-njov.onrender.com", {
+      const response = await fetch("https://check-backend-njov.onrender.com/api/test", {
         method: "GET",
         credentials: "include", // This is necessary for cookies or authentication headers if required
       });
@@ -23,7 +23,7 @@ function App() {
   // Send data to the backend (POST request)
   const sendData = async () => {
     try {
-      const response = await fetch("https://check-backend-njov.onrender.com", {
+      const response = await fetch("https://check-backend-njov.onrender.com/api/data", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
