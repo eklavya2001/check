@@ -6,7 +6,7 @@ const app = express();
 // CORS configuration
 app.use(
   cors({
-    origin: "http://localhost:5173", // Replace with your frontend URL
+    origin: "https://check-frontend-swy9.onrender.com", // Replace with your frontend URL
     credentials: true,
   })
 );
